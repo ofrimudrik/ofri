@@ -1,0 +1,102 @@
+/* הגדרת הפונט */
+@font-face {
+    font-family: "MyFont"; /* שם הפונט שלך */
+    src: url("fonts/myFont.ttf") format("truetype"); /* נתיב הפונט שלך */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* כללי עיצוב לדף */
+body {
+    font-family: "MyFont", Heebo, sans-serif; /* אם הפונט לא ייטען, יפול על Arial */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-family: "MyFont", sans-serif; /* הפונט שלך גם בכותרות */
+}
+
+p {
+    font-family: "MyFont", sans-serif;
+}
+
+/* כאן תוכל להוסיף עיצובים נוספים */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    direction: rtl;
+}
+header {
+    text-align: center;
+    background-color: #8BCBC8;
+    padding: 20px;
+    color: white;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.button {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #FDAE84;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+    background-color: #ECC7C0;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3C2E3D;
+    color: white;
+    margin-top: 20px;
+}
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* התאמה למובייל */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    header {
+        padding: 15px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+
